@@ -1,0 +1,9 @@
+site_name: Clean-Directory
+repo_url: https://github.com/jmuelbert/Clean-Directory
+theme: readthedocs
+pages:
+  - Home: index.md
+  - Clean-Directory Basics:
+    - What is Clean-Directory: about.md
+    - Quick Start: Quick-Start-Installation-and-Example.md
+  - Acknowledgements: acknowledgements.md
