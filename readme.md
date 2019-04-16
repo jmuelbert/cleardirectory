@@ -1,10 +1,12 @@
 # ClearDirectory
 
+[![Build Status](https://travis-ci.org/jmuelbert/ClearDirectory.svg?branch=master)](https://travis-ci.org/jmuelbert/ClearDirectory)
+
 a cleaner for generated files in a output directory
 
 ## GitPitch PitchMe presentation
 
-* [gitpitch.com/jmuelbert/Clean-Directory](https://gitpitch.com/jmuelbert/ClearDirectory)
+* [gitpitch.com/jmuelbert/ClearDirectory](https://gitpitch.com/jmuelbert/ClearDirectory)
 
 ## Getting Started
 
@@ -18,7 +20,7 @@ Install from the PSGallery and Import the module
 
 For more information
 
-* [Clean-Directory.readthedocs.io](http://ClearDirectory.readthedocs.io)
+* [ClearDirectory.readthedocs.io](http://ClearDirectory.readthedocs.io)
 * [github.com/jmuelbert/Clean-Directory](https://github.com/jmuelbert/ClearDirectory)
 * [jmuelbert.github.io](https://jmuelbert.github.io)
 
