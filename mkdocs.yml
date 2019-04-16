@@ -1,5 +1,5 @@
-site_name: Clean-Directory
-repo_url: https://github.com/jmuelbert/Clean-Directory
+site_name: Clear-Directory
+repo_url: https://github.com/jmuelbert/Clear-Directory
 theme: readthedocs
 pages:
   - Home: index.md

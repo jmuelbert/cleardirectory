@@ -1,4 +1,4 @@
-# What is Clean-Directory
+# What is Clear-Directory
 
 a cleaner for generated files in a output directory
 

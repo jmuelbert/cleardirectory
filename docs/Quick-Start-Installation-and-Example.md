@@ -1,7 +1,7 @@
-# Installing Clean-Directory
+# Installing Clear-Directory
 
-    # Install Clean-Directory from the PowerShell Gallery
-    Find-Module Clean-Directory | Install-Module
+    # Install CleanrDirectory from the PowerShell Gallery
+    Find-Module Clear-Directory | Install-Module
 
     #Import Module
-    Import-Module Clean-Directory
+    Import-Module Clear-Directory
