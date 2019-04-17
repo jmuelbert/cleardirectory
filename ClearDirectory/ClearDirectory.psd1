@@ -3,7 +3,7 @@
 # Generated on: 12.03.19
 
 @{
-    RootModule        = 'Clear-Directory.psm1'
+    RootModule        = 'ClearDirectory.psm1'
     ModuleVersion     = '0.1.0'
     GUID              = '475ee509-b052-4ab4-8f75-9cd793f84004'
     Author            = 'Juergen Muelbert'
@@ -14,13 +14,13 @@
     FunctionsToExport = '*'
 
     # Cmdlets to export from this module
-    CmdletsToExport = '*'
+    CmdletsToExport   = '*'
 
     # Variables to export from this module
     VariablesToExport = '*'
 
     # Aliases to export from this module
-    AliasesToExport = '*'
+    AliasesToExport   = '*'
     # CompatiblePSEditions = @()
     # PowerShellVersion = ''
     # PowerShellHostName = ''
