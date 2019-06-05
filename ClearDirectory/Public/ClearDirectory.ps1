@@ -29,7 +29,7 @@ Function Clear-Directory
     {
         ## Or check for the cmdlets you need
         ## Load it nested, and we'll automatically remove it during clean up
-        Install-Module -Name ScriptLogger -ErrorAction Stop -Scope CurrentUser#
+        Install-Module -Name ScriptLogger -ErrorAction Stop -Scope CurrentUser
     }
 
 
