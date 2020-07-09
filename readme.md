@@ -1,5 +1,6 @@
 # ClearDirectory
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/36c73d01de7f4fa5829017f9eaba3ce6)](https://app.codacy.com/manual/jmuelbert/ClearDirectory?utm_source=github.com&utm_medium=referral&utm_content=jmuelbert/ClearDirectory&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/jmuelbert/ClearDirectory.svg?branch=master)](https://travis-ci.org/jmuelbert/ClearDirectory)
 [![Build status](https://ci.appveyor.com/api/projects/status/rdouteek4c3gi8ex?svg=true)](https://ci.appveyor.com/project/jmuelbert/cleardirectory)
 
