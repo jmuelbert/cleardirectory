@@ -14,7 +14,7 @@ on:
       matrix:
         os: [ubuntu-latest, windows-latest, macOS-latest]
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2.3.2
     - name: Test
       shell: pwsh
       run: ./build.ps1 -Task Test -Bootstrap
