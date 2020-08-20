@@ -1,4 +1,10 @@
 {
+    "editor.insertSpaces": true,
+    "editor.rulers": [
+        120
+    ],
+    "editor.tabSize": 4,
+    "files.insertFinalNewline": true,
     // Trim trailing whitespaces, but not for markdown
     "files.trimTrailingWhitespace": true,
     "[markdown]": {
@@ -12,11 +18,25 @@
         "Sources/*/packages/**": true,
         "Sources/*/TestResults/**": true
     },
+    "markdownlint.config": {
+        "MD013": false,
+        "MD024": false,
+        "MD029": false,
+        "MD033": {
+            "allowed_elements": [
+                "kbd"
+            ]
+        },
+        "MD034": false,
+        "MD038": false
+    },
     "search.exclude": {
         "bin": true,
         "tst": true
     },
     // PowerShell console behaviour
+    "powershell.codeFormatting.preset": "Stroustrup",
+    "powershell.scriptAnalysis.settingsPath": "PSScriptAnalyzerSettings.psd1",
     "powershell.debugging.createTemporaryIntegratedConsole": true,
     "powershell.integratedConsole.showOnStartup": true,
     "powershell.integratedConsole.focusConsoleOnExecute": false,

@@ -29,16 +29,18 @@
     },
 
     // Associate with test task runner
-    "tasks": [{
-        "label": "Test",
-        "type": "shell",
-        "command": "Invoke-Pester test -PesterOption @{IncludeVSCodeMarker=$true}",
-        "group": {
-            "kind": "test",
-            "isDefault": true
-        },
-        "problemMatcher": [
-            "$pester"
-        ]
-    }]
+    "tasks": [
+        {
+            "label": "Test",
+            "type": "shell",
+            "command": "Import-Module Pester -MinimumVersion 5.0.0; $c = [PesterConfiguration]::Default; $c.Run.Path = 'test'; $c.Output.Verbosity = 'Detailed'; $c.Debug.WriteVSCodeMarker = $true; Invoke-Pester -Configuration $c",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$pester"
+            ]
+        }
+    ]
 }
