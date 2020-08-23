@@ -1,53 +1,13 @@
 {
-    "editor.insertSpaces": true,
-    "editor.rulers": [
-        120
-    ],
-    "editor.tabSize": 4,
-    "files.insertFinalNewline": true,
-    // Trim trailing whitespaces, but not for markdown
-    "files.trimTrailingWhitespace": true,
+    // Comment
+    "component.configuration": "value",
+    "[language]": {
+        "component.configuration": "value"
+    },
+    // To show invisibles
+    "editor.renderWhitespace": "all",
+    // Enable wordWrap for markdown files
     "[markdown]": {
-        "files.trimTrailingWhitespace": false
-    },
-    // Exclude files form the explorer tree
-    "files.exclude": {
-        "bin/**": true,
-        "tst/**": true,
-        "Sources/*/.vs/**": true,
-        "Sources/*/packages/**": true,
-        "Sources/*/TestResults/**": true
-    },
-    "markdownlint.config": {
-        "MD013": false,
-        "MD024": false,
-        "MD029": false,
-        "MD033": {
-            "allowed_elements": [
-                "kbd"
-            ]
-        },
-        "MD034": false,
-        "MD038": false
-    },
-    "search.exclude": {
-        "bin": true,
-        "tst": true
-    },
-    // PowerShell console behaviour
-    "powershell.codeFormatting.preset": "Stroustrup",
-    "powershell.scriptAnalysis.settingsPath": "PSScriptAnalyzerSettings.psd1",
-    "powershell.debugging.createTemporaryIntegratedConsole": true,
-    "powershell.integratedConsole.showOnStartup": true,
-    "powershell.integratedConsole.focusConsoleOnExecute": false,
-    // PowerShell code formatting
-    "powershell.codeFormatting.openBraceOnSameLine": false,
-    "powershell.codeFormatting.newLineAfterOpenBrace": true,
-    "powershell.codeFormatting.newLineAfterCloseBrace": true,
-    "powershell.codeFormatting.whitespaceBeforeOpenBrace": true,
-    "powershell.codeFormatting.whitespaceBeforeOpenParen": true,
-    "powershell.codeFormatting.whitespaceAroundOperator": true,
-    "powershell.codeFormatting.whitespaceAfterSeparator": true,
-    "powershell.codeFormatting.ignoreOneLineBlock": true,
-    "powershell.codeFormatting.alignPropertyValuePairs": true
+        "editor.wordWrap": "on"
+    }
 }

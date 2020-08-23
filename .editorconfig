@@ -4,9 +4,34 @@
 root = true
 
 [*]
-indent_style = space
-indent_size = 4
+tab_width = 4
+trim_trailing_whitespace = true
 insert_final_newline = true
 
-[*.{ps1,psd1,psm1}]
-trim_trailing_whitespace = true
+[{*.xaml, *.xml, *.targets, *.props}]
+indent_style = tab
+
+[{*.cs, *.tt, *.java}]
+indent_style = tab
+
+[{*.ts, *.json}]
+indent_style = tab
+
+[*.csproj]
+indent_style = tab
+tab_width = 2
+indent_size = 2
+
+[*.js]
+indent_style = space
+
+[*.css]
+indent_style = space
+tab_width = 2
+indent_size = 2
+
+[{*.yml, *.yaml}]
+indent_style = space
+
+[*.md]
+indent_style = space
