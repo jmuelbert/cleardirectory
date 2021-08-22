@@ -1,13 +1,7 @@
 {
-    // Comment
-    "component.configuration": "value",
-    "[language]": {
-        "component.configuration": "value"
-    },
-    // To show invisibles
-    "editor.renderWhitespace": "all",
-    // Enable wordWrap for markdown files
-    "[markdown]": {
-        "editor.wordWrap": "on"
-    }
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "powershell.codeFormatting.preset": "OTBS"
 }
