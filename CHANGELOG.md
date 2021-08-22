@@ -8,6 +8,7 @@
 
 **Merged pull requests:**
 
+- Fix typos by misspell-fixer for refs/heads/master [\#32](https://github.com/jmuelbert/cleardirectory/pull/32)
 - Update workflows [\#31](https://github.com/jmuelbert/cleardirectory/pull/31)
 - Bump codacy/codacy-analysis-cli-action from 1.1.0 to 4.0.0 [\#30](https://github.com/jmuelbert/cleardirectory/pull/30)
 - Bump peter-evans/create-pull-request from 3.9.2 to 3.10.0 [\#29](https://github.com/jmuelbert/cleardirectory/pull/29)
