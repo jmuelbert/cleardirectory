@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased](https://github.com/jmuelbert/cleardirectory/tree/HEAD)
+## [master](https://github.com/jmuelbert/cleardirectory/tree/HEAD)
 
 **Closed issues:**
 
