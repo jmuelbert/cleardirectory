@@ -36,11 +36,22 @@ indent_size = 2
 indent_size = 4
 max_line_length = 80
 
+[*.{ps1,psd1,psm1}]
+indent_style = space
+indent_size = 2
+insert_final_newline = false
+
 [{*.xaml, *.xml, *.targets, *.props}]
 indent_style = tab
 
 [{*.cs, *.tt}]
-indent_style = tab
+indent_style = space
+indent_size = 4
+insert_final_newline = false
+csharp_new_line_before_open_brace = none:error
+csharp_new_line_before_else = false
+csharp_new_line_before_catch = false
+csharp_new_line_before_finally = false
 
 [{*.ts, *.json}]
 indent_style = tab
