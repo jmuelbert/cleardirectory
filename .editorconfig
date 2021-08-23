@@ -1,17 +1,45 @@
 # To use this file you must have EditorConfig installed for your editor.
 # For Visual Studio Code, install the extension: "EditorConfig for VS Code"
 # https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+
+# top-most EditorConfig file
 root = true
 
+# Unix-style newlines with a newline ending every file
+# ------------------
+# Source code
+# ------------------
 [*]
-tab_width = 4
+end_of_line = lf
+indent_style = space
+indent_size = 4
+charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
+
+# Indentation override for all JS under lib directory
+[*.{js,json,vue,scss,rb,haml,yml,yaml,toml}]
+indent_size = 2
+
+[*.{js,json,vue,scss,rb,haml,yml,md}]
+indent_style = space
+charset = utf-8
+
+# Source code files
+[*.{c,cxx,cpp,h,hxx,hpp,java,m,mm,py,swift,xsl}]
+indent_style = space
+indent_size = 2
+
+# Matches multiple files with brace expansion notation
+# Set default charset
+[*.py]
+indent_size = 4
+max_line_length = 80
 
 [{*.xaml, *.xml, *.targets, *.props}]
 indent_style = tab
 
-[{*.cs, *.tt, *.java}]
+[{*.cs, *.tt}]
 indent_style = tab
 
 [{*.ts, *.json}]
@@ -22,16 +50,20 @@ indent_style = tab
 tab_width = 2
 indent_size = 2
 
-[*.js]
-indent_style = space
-
 [*.css]
 indent_style = space
 tab_width = 2
 indent_size = 2
 
-[{*.yml, *.yaml}]
+[*.html]
 indent_style = space
+indent_size = 2
 
-[*.md]
-indent_style = space
+[*.{bat,cmd}]
+end_of_line = crlf
+
+[*.{md,markdown,js.snap}]
+trim_trailing_whitespace = false
+
+[LICENSE]
+insert_final_newline = false
