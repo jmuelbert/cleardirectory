@@ -48,7 +48,7 @@ jobs:
           .\build.ps1 -Task Build
 
       - name: Capture Powershell Module
-        uses: actions/upload-artifact@2
+        uses: actions/upload-artifact@v2
         with:
           name: PSModule
           path: ${{ steps.SetEnvVariables.outputs.prjModulePath }}
