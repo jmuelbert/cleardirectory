@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - update-project
     # tags:
     #  - '*'
   pull_request:
