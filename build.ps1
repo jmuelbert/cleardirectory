@@ -151,7 +151,7 @@ if ($InstallDependencies) {
 
   }
 
-  # If Gallery was orginally Untrusted set back.
+  # If Gallery was originally Untrusted set back.
   if ($gallery -and $gallery.InstallationPolicy -eq "Untrusted") {
     Set-PSRepository -Name $GalleryRepository -InstallationPolicy Untrusted
   }
