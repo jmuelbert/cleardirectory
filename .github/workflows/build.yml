@@ -31,6 +31,11 @@ jobs:
         id: SetEnvVariables
         shell: pwsh
         run: |
+          .\build.ps1 -InstallDependencies -Task SetEnvironment
+      - if: steps.debugStatus.outputs.stepDebug
+        name: Environment Information
+        shell: pwsh
+        run: |
           "::group::Powershell Modules"
           ($ENV:PSModulePath).split([io.path]::pathseparator) | where {Test-Path $_} | Get-ChildItem
           "::endgroup"
