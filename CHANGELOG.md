@@ -5,6 +5,7 @@
 **Closed issues:**
 
 - Error in script ClearDirectory.ps1 [\#2](https://github.com/jmuelbert/cleardirectory/issues/2)
+- Install Failed [\#1](https://github.com/jmuelbert/cleardirectory/issues/1)
 
 **Merged pull requests:**
 
