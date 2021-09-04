@@ -27,6 +27,7 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+[Bb]uildDependencies
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
@@ -333,14 +334,6 @@ ASALocalRun/
 # MFractors (Xamarin productivity tool) working folder
 .mfractor/
 
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# C extensions
-*.so
-
 # Distribution / packaging
 .Python
 build/
@@ -355,6 +348,7 @@ parts/
 sdist/
 var/
 wheels/
+pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
@@ -445,6 +439,7 @@ celerybeat.pid
 env/
 venv/
 ENV/
+svenv/
 env.bak/
 venv.bak/
 
