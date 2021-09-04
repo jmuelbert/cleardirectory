@@ -23,4 +23,4 @@ For more information
 -   [github.com/jmuelbert/cleardirectory](https://github.com/jmuelbert/cleardirectory)
 -   [jmuelbert.github.io/cleardirectory](https://jmuelbert.github.io/cleardirectory/)
 
-This project was generated using [Kevin Marquette](http://kevinmarquette.github.io)'s [Full Module Plaster Template](https://github.com/KevinMarquette/PlasterTemplates/tree/master/FullModuleTemplate).
+This project was generated using [Kevin Marquette](http://kevinmarquette.github.io)'s [Full Module Plaster Template](hls tree/master/FullModuleTemplate).
