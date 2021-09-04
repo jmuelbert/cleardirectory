@@ -9,6 +9,7 @@
 
 **Merged pull requests:**
 
+- Bump david-a-wheeler/flawfinder from 2.0.19.pre.alpha1 to 2.0.19 [\#35](https://github.com/jmuelbert/cleardirectory/pull/35)
 - Bump peter-evans/create-pull-request from 3.10.0 to 3.10.1 [\#34](https://github.com/jmuelbert/cleardirectory/pull/34)
 - Fix typos by misspell-fixer for refs/heads/master [\#32](https://github.com/jmuelbert/cleardirectory/pull/32)
 - Update workflows [\#31](https://github.com/jmuelbert/cleardirectory/pull/31)
