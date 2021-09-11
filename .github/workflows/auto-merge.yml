@@ -1,0 +1,17 @@
+name: Auto-merge
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+
+  pull_request_target:
+
+jobs:
+  auto_merge:
+    name: Auto-merge and patch updates
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ahmadnassri/action-dependabot-auto-merge@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
