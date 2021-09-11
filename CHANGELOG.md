@@ -1,6 +1,30 @@
-# Changelog
+# Changelog for Clear-Directory
 
 ## [Unreleased](https://github.com/jmuelbert/cleardirectory/tree/HEAD)
+
+### Added
+
+- For new features
+  
+### Changed
+
+- For changes in existing funcionality
+
+### Deprecatad
+
+- For soon removed features
+
+### Removed 
+
+- For now removed features.
+
+### Fixed 
+
+- For any bug fix.
+
+### Security
+
+- In case of vulnerabilities.
 
 **Closed issues:**
 
