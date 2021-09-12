@@ -7,10 +7,15 @@
 # Output Directory where ModuleBuilder will build the Module, relative to module manifest
 # OutputDirectory: ../output/Sampler
 CopyPaths:
+  #- HelperSubmodule # This will be built as submodule instead
+  #- DSCResources
+  #- ../build/tasks
+  #- scripts
   - en-US
-  - DSCResources
+  #- Templates
   # - Modules
 Encoding: UTF8
+
 # Can be used to manually specify module's semantic version if the preferred method of
 # using GitVersion is not available, and it is not possible to set the session environment
 # variable `$env:ModuleVersion`, nor setting the variable `$ModuleVersion`, in the
@@ -30,14 +35,14 @@ NestedModule:
   # DscResource.Common:
   #   CopyOnly: true
   #   Path: ./output/RequiredModules/DscResource.Common # relative to , default to '/Modules/'
-  #   # Destination: './output///Modules/' # or override with path relative to 
+  #   # Destination: './output///Modules/' # or override with path relative to
   #   AddToManifest: false
   #   # include: '*.*'
   #   Exclude: PSGetModuleInfo.xml
   #   #Filter:
-  Folder.Common:
-    CopyOnly: true
-    AddToManifest: false
+  # Folder.Common:
+  #  CopyOnly: true
+  #  AddToManifest: false
 
 ####################################################
 #       Sampler Pipeline Configuration             #
@@ -54,13 +59,12 @@ BuildWorkflow:
     - Build_NestedModules_ModuleBuilder
     - Create_changelog_release_output
 
-
   pack:
     - build
     - package_module_nupkg
 
-  hqrmtest:
-    - DscResource_Tests_Stop_On_Fail
+  # hqrmtest:
+  #   - DscResource_Tests_Stop_On_Fail
 
   # Defining test task to be run when invoking `./build.ps1 -Tasks test`
   test:
@@ -73,11 +77,10 @@ BuildWorkflow:
   # Use this task when you have multiple parallel tests, which produce multiple
   # code coverage files and needs to get merged into one file.
   #merge:
-    #- Merge_CodeCoverage_Files
+  #- Merge_CodeCoverage_Files
 
   publish:
     - publish_module_to_gallery
-
 
 ####################################################
 #       PESTER  Configuration                      #
@@ -103,7 +106,7 @@ Pester:
   #  - FunctionalQuality
   #  - TestQuality
   Tag:
-  CodeCoverageThreshold: 85 # Set to 0 to bypass
+  CodeCoverageThreshold: 0 # Set to 0 to bypass
   #CodeCoverageOutputFile: JaCoCo_.xml
   #CodeCoverageOutputFileEncoding: ascii
   # Use this if code coverage should be merged from several pipeline test jobs.
@@ -117,15 +120,15 @@ Pester:
   #CodeCoverageMergedOutputFile: JaCoCo_coverage.xml
   #CodeCoverageFilePattern: JaCoCo_Merge.xml
 
-DscTest:
-  ExcludeTag:
-    - "Common Tests - New Error-Level Script Analyzer Rules"
-  Tag:
-  ExcludeSourceFile:
-    - output
-  ExcludeModuleFile:
-    - Modules/DscResource.Common
-  #  - Templates
+# DscTest:
+#   ExcludeTag:
+#     - 'Common Tests - New Error-Level Script Analyzer Rules'
+#   Tag:
+#   ExcludeSourceFile:
+#     - output
+#   ExcludeModuleFile:
+#     - Modules/DscResource.Common
+#   #  - Templates
 
 # Import ModuleBuilder tasks from a specific PowerShell module using the build
 # task's alias. Wildcard * can be used to specify all tasks that has a similar
@@ -134,8 +137,6 @@ DscTest:
 ModuleBuildTasks:
   Sampler:
     - '*.build.Sampler.ib.tasks'
-
-
 
 # Invoke-Build Header to be used to 'decorate' the terminal output of the tasks.
 TaskHeader: |
@@ -148,7 +149,3 @@ TaskHeader: |
   Write-Build DarkGray "  $Path"
   Write-Build DarkGray "  $($Task.InvocationInfo.ScriptName):$($Task.InvocationInfo.ScriptLineNumber)"
   ""
-
-
-
-

@@ -7,12 +7,12 @@ $ProjectName = ((Get-ChildItem -Path $ProjectPath\*\*.psd1).Where{
 Import-Module $ProjectName
 
 InModuleScope $ProjectName {
-    Describe Get-Something {
+    Describe Clear-Directory {
         Mock Get-PrivateFunction { $PrivateData }
 
         Context 'Return values' {
             BeforeEach {
-                $return = Get-Something -Data 'value'
+                $return = Clear-Directory -myPath 'value'
             }
 
             It 'Returns a single object' {
@@ -36,7 +36,7 @@ InModuleScope $ProjectName {
             It 'Accepts value from the pipeline by property name' {
                 $return = 'value1', 'value2' | ForEach-Object {
                     [PSCustomObject]@{
-                        Data = $_
+                        Data          = $_
                         OtherProperty = 'other'
                     }
                 } | Get-Something

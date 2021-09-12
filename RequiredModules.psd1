@@ -1,19 +1,20 @@
 @{
-    PSDependOptions             = @{
+    PSDependOptions     = @{
         AddToPath  = $true
         Target     = 'output\RequiredModules'
         Parameters = @{
-           Repository = 'PSGallery'
+            Repository = 'PSGallery'
         }
     }
 
-    InvokeBuild                 = 'latest'
-    PSScriptAnalyzer            = 'latest'
-    Pester                      = '4.10.1'
-    Plaster                     = 'latest'
-    ModuleBuilder               = 'latest'
-    ChangelogManagement         = 'latest'
-    Sampler                     = 'latest'
+    InvokeBuild         = 'latest'
+    PSScriptAnalyzer    = 'latest'
+    Pester              = '4.10.1'
+    Plaster             = 'latest'
+    ModuleBuilder       = 'latest'
+    MarkdownLinkCheck   = 'latest'
+    ChangelogManagement = 'latest'
+    Sampler             = 'latest'
 
 }
 
