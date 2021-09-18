@@ -1,17 +1,14 @@
-name: Auto-merge
-
+name: Auto-merge minor/patch
 on:
   schedule:
-    - cron: '0 * * * *'
-
-  pull_request_target:
-
+    - cron: "0 * * * *"
 jobs:
-  auto_merge:
-    name: Auto-merge and patch updates
-    runs-on: ubuntu-latest
+  test:
+    name: Auto-merge minor and patch updates
+    runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
-      - uses: ahmadnassri/action-dependabot-auto-merge@v2
+      - uses: koj-co/dependabot-pr-action@master
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          merge-minor: true
+          merge-patch: true
