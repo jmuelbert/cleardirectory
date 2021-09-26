@@ -75,11 +75,11 @@ jobs:
           if ('${{secrets.ACTIONS_STEP_DEBUG}}') {$verbosePreference = 'continue'}
           .\build.ps1
 
-      - name: Capture PowerShell 7 Pester Results
-        uses: actions/upload-artifact@v2
-        with:
-          name: ${{ steps.pwsh7testing.outputs.pesterfile }}
-          path: ${{ steps.pwsh7testing.outputs.pesterResults }}
+      # - name: Capture PowerShell 7 Pester Results
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: ${{ steps.pwsh7testing.outputs.pesterfile }}
+      #     path: ${{ steps.pwsh7testing.outputs.pesterResults }}
 
       - if: runner.os == 'Windows'
         name: Test Windows Powershell 5.1
@@ -89,13 +89,13 @@ jobs:
           if ('${{secrets.ACTIONS_STEP_DEBUG}}') {$verbosePreference = 'continue'}
           .\build.ps1
 
-      - if: runner.os == 'Windows'
-        name: Capture PowerShell 5 Pester Results
-        uses: actions/upload-artifact@v2
-        with:
-          name: ${{ steps.pwsh5testing.outputs.pesterfile }}
-          path: ${{ steps.pwsh5testing.outputs.pesterResults }}
-    if: ${{ always() }}
+    #   - if: runner.os == 'Windows'
+    #     name: Capture PowerShell 5 Pester Results
+    #     uses: actions/upload-artifact@v2
+    #     with:
+    #       name: ${{ steps.pwsh5testing.outputs.pesterfile }}
+    #       path: ${{ steps.pwsh5testing.outputs.pesterResults }}
+    # if: ${{ always() }}
 
   changeLog:
     if: startsWith(github.ref, 'refs/tags/')
