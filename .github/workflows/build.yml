@@ -40,9 +40,9 @@ jobs:
       #     path: ${{ steps.SetEnvVariables.outputs.prjModulePath }}
 
   test:
-    name: Pester Tests
+    name: Pester Tests on - ${{ matrix.config.name }}
     needs: build
-    runs-on: $(( matrix.config.os ))
+    runs-on: ${{ matrix.config.os }}
     strategy:
       fail-fast: false
       matrix:
