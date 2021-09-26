@@ -40,7 +40,7 @@ jobs:
       #     path: ${{ steps.SetEnvVariables.outputs.prjModulePath }}
 
   test:
-    name: Pester Tests on - ${{ matrix.config.name }}
+    name: Pester Tests on - ${{ matrix.config.os }}
     needs: build
     runs-on: ${{ matrix.config.os }}
     strategy:
@@ -73,7 +73,7 @@ jobs:
         shell: pwsh
         run: |
           if ('${{secrets.ACTIONS_STEP_DEBUG}}') {$verbosePreference = 'continue'}
-          .\build.ps1 test
+          .\build.ps1
 
       - name: Capture PowerShell 7 Pester Results
         uses: actions/upload-artifact@v2
@@ -87,7 +87,7 @@ jobs:
         shell: powershell
         run: |
           if ('${{secrets.ACTIONS_STEP_DEBUG}}') {$verbosePreference = 'continue'}
-          .\build.ps1 test
+          .\build.ps1
 
       - if: runner.os == 'Windows'
         name: Capture PowerShell 5 Pester Results
