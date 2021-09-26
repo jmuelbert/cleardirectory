@@ -23,6 +23,3 @@ foreach ($import in $Public) {
 }
 
 Export-ModuleMember -Function $Public.BaseName
-
-
-

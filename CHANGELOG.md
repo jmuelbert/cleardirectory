@@ -5,7 +5,7 @@
 ### Added
 
 - For new features
-  
+
 ### Changed
 
 - For changes in existing funcionality
@@ -14,11 +14,11 @@
 
 - For soon removed features
 
-### Removed 
+### Removed
 
 - For now removed features.
 
-### Fixed 
+### Fixed
 
 - For any bug fix.
 

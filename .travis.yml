@@ -36,4 +36,3 @@ jobs:
 
 script:
   - pwsh -c 'Import-Module Pester -PassThru; $res = Invoke-Pester -Path test -Output Detailed -PassThru -ErrorAction SilentlyContinue; if (!$res -or ($res.FailedCount -gt 0)) { $Error | Format-List * -Force; exit 1 }'
-
