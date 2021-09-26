@@ -1,4 +1,3 @@
-#!/usr/bin/env pwsh
 <#
     .SYNOPSIS
       Delete templorarly files in a directory after x days.

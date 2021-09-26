@@ -7,4 +7,3 @@ The original author of this project is Juergen Muelbert. All of this was made po
 ## Kevin Marquette
 
 This project was generated using a [Plaster template](https://github.com/KevinMarquette/PlasterTemplates) that he put together and shared with the community. It is modeled after the way he builds his projects. A lot of the base structure for this project was put in place by that Plaster template. [kevinmarquette.github.io](http://kevinmarquette.github.io)
-
