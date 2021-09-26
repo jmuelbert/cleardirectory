@@ -62,11 +62,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Restore Built Powershell Module
-        uses: actions/download-artifact@v2
-        with:
-          name: PSModule
-          path: BuildOutput/${{ github.event.repository.name }}
+      # - name: Restore Built Powershell Module
+      #   uses: actions/download-artifact@v2
+      #   with:
+      #     name: PSModule
+      #     path: BuildOutput/${{ github.event.repository.name }}
 
       - name: Test Powershell 7+
         id: pwsh7testing
@@ -88,6 +88,7 @@ jobs:
         run: |
           if ('${{secrets.ACTIONS_STEP_DEBUG}}') {$verbosePreference = 'continue'}
           .\build.ps1 test
+
       - if: runner.os == 'Windows'
         name: Capture PowerShell 5 Pester Results
         uses: actions/upload-artifact@v2
