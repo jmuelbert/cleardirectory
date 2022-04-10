@@ -41,7 +41,7 @@ Function Clear-Directory {
     [switch]$Whatif
   )
 
-  if (!(Get-Module ScriptLogger)) {
+  if (!(Get-Module PoShLog)) {
     ## Or check for the cmdlets you need
     ## Load it nested, and we'll automatically remove it during clean up
     Install-Module -Name ScriptLogger -ErrorAction Stop -Scope CurrentUser
@@ -71,10 +71,10 @@ Function Clear-Directory {
     $isFile = Test-Path -Path $myFileTestPath  -PathType Leaf
     If ($isFile -eq $true) {
       if ($Whatif -eq $true) {
-        Write-Information('What-IF:Move from: ' + $myFileTestPath + ' to ' + $myFileBackupPath)
+        Write-InfoLog 'What-IF:Move from: {@from} to {@to}' -PropertyValues $myPath, $myFileBackupPath)
       } else {
         Move-Item -Path $myFileTestPath -Destination $myFileBackupPath
-        Write-Information('Move from: ' + $myFileTestPath + ' to ' + $myFileBackupPath)
+        Write-InfoLog 'Move from: {@from} to {@to}' -PropertyValues $myFileTestPath, $myFileBackupPath
       }
     }
   }
@@ -87,10 +87,10 @@ Function Clear-Directory {
     $isFile = Test-Path -Path $myFileTestPath  -PathType Leaf
     If ($isFile -eq $true) {
       if ($Whatif -eq $true) {
-        Write-Information('Delete: ' + $myFileTestPath)
+        Write-InfoLog 'WhatIF: Delete: {@FilePath}' -PropertyValues $myFileTestPath
       } else {
         Remove-Item -Path $myFileTestPath
-        Write-Information('Delete: ' + $myFileTestPath)
+        Write-Information 'Delete: {@FilePath}' -PropertyValues $myFileTestPath
       }
     }
   }
