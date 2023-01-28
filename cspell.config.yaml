@@ -3,18 +3,9 @@ version: '0.2'
 files:
   - '**/*'
 dictionaryDefinitions:
-  - name: cmake-refined
-    path: ./config/cmake-refined-words.txt
-    addWords: false
-  - name: qt
-    path: ./config/qt-words.txt
-    addWords: false
-  - name: linux-package
-    path: ./config/linux-package-words.txt
-    addWords: false
-  - name: taskfile
-    path: ./config/taskfile-words.txt
-    addWords: false
+  # - name: cmake-refined
+  #   path: ./config/cmake-refined-words.txt
+  #   addWords: false
 dictionaries:
   - qt
   - taskfile
