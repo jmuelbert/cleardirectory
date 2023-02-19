@@ -1,6 +1,6 @@
 # Contributing to cleardirectory
 
-First time contributing to jmbde-aspnet ? Read our [Code of Conduct](https://github.com/jmuelbert/cleardirectory/blob/master/CODE_OF_CONDUCT.md#code-of-conduct).
+First time contributing to cleardirectory ? Read our [Code of Conduct](https://github.com/jmuelbert/cleardirectory/blob/master/.github/CODE_OF_CONDUCT.md#code-of-conduct).
 
 ## Report a bug
 
