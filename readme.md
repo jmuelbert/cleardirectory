@@ -19,7 +19,7 @@ Install from the PSGallery and Import the module
 
 For more information
 
--   [cleardirectory.readthedocs.io](http://cleardirectory.readthedocs.io)
+-   [jmuelbert.github.io/cleardirectory/](https://jmuelbert.github.io/cleardirectory/)
 -   [github.com/jmuelbert/cleardirectory](https://github.com/jmuelbert/cleardirectory)
 -   [jmuelbert.github.io/cleardirectory](https://jmuelbert.github.io/cleardirectory/)
 
