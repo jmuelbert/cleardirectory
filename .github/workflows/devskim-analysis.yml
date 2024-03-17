@@ -18,7 +18,7 @@ on: # yamllint disable-line rule:truthy
     types: [opened, synchronize, reopened]
 
   schedule:
-    - cron: "26 26 * * 3"
+    - cron: "21 21 * * 3"
 
 permissions:
   contents: read
